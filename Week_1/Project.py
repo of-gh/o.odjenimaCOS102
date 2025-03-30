@@ -52,7 +52,7 @@ def antypln():
     n= int(input("Enter the number of times to compound yearly "))
     
     #The annuity plan on the slides had an error with the placement of the '1-' and the power 'nt' so I corrected it
-    A= (PMT*(1-(1+(R/n))^(-1*n*T)))/(R/n)
+    A= (PMT*(1-(1+(R/n))**(-1*n*T)))/(R/n)
     print("Your Annuity is, ",A)
 
     #Returning to the beginning
